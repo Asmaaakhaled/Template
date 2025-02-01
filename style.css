@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: rgb(231, 121, 147); */
+    line-height: 80px;
+}
+nav h4{
+    float: left;
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 5%;
+}
+nav ul{
+    
+   /* float: left; */
+   width: 50%;
+   margin: 0 auto;
+   padding:0 5%;
+   /* background-color: red; */
+   text-align: center;
+   list-style:none;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav  ul li a:hover{
+    color: rgb(239,108,134);
+}
+
+
+nav .icons{
+    float: right;
+    margin-right: 5%;
+}
+nav .icons i{
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    margin:0 10px;
+}
+nav .clear{
+    clear: both;
+}
+header{
+    height: 1000px;
+    position: relative;
+    /* margin-bottom: 70px; */
+}
+header .top{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    
+    /* animation: headerAnime ease infinite;
+    animation-duration: 2s;  */
+    /* animation-delay: 2s; */
+}
+header .top .grediant{
+    /* display: inline-block; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.365);
+}
+
+header .top .st{
+    width: 100%;
+    height: 100%;
+    background:url(images/hero_bg_2.jpg) no-repeat center  fixed;
+    background-size:cover;
+    /* background-position:center fixed;
+    background-repeat: no-repeat ;
+    background-size:cover ; */
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    /* line-height: 600px; */
+    
+    
+}
+header .top .st .h_content{
+    display: inline-block;
+    position: relative;
+    z-index: 6;
+    margin: 11% auto;
+
+    
+}
+header .top .st .h_content h1{
+    font-size: 64px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 30px;
+    
+}
+header .top .st .h_content p{
+    font-size: 19.2px;
+    font-weight: 300;   
+    color: rgba(255, 255, 255, 0.608);
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    line-height: 35px;
+
+    
+}
+header .top .st .h_content .btn{
+    background-color: rgb(239,108,87);
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 2px solid rgb(239,108,87);
+}
+header .top .st .h_content .btn:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+}
+header .top .nd{
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    background:url(images/hero_bg_1.jpg) no-repeat fixed;
+    background-size:cover ;
+    /* background-position:center fixed;
+    background-repeat: no-repeat ;
+    background-size:cover ; */
+    position: absolute;
+    right: 0;
+ 
+
+}
+
+header .bottom{
+    height: 500px;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    
+}
+header .bottom div{
+   display: inline-block;
+   width: 27%;
+   height: 80%;
+   background-color: rgb(0, 0, 0);
+   position: relative;
+   margin:0 20px;
+   overflow: hidden;
+}
+header .bottom div img{
+    width: 100%;
+    height: 100%;
+    /* scale: 1.1; */
+    transition: all 0.6s;
+}
+header .bottom .darkbPic:hover header .bottom div img{
+    scale: 1.1;
+}
+header .bottom .darkbPic
+{
+    /* display: inline-block; */
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.219); */
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.993) , transparent);
+    position: absolute;
+    left: -20px;
+    top: 0;
+    
+}
+header .bottom div h4{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.884);
+    transition: all 0.6s;
+    font-size: 19.2;
+    font-weight: 500;
+}
+
+header .bottom .image:hover{
+    img,.darkbPic{
+        scale: 1.1;
+        
+    }
+    h4{
+        transform: translateY(-30px);
+    }
+}
+.services{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.services .service_1 ,.services .service_2{
+    width: 84%;
+    margin: 0 auto;
+    
+    /* padding: 0 10%; */
+    /* background-color: red; */
+    margin-bottom: 50px;
+}
+.services h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 300;
+}
+.services .service_1 section{
+    display: inline-block;
+    width: 28%;
+    /* background-color: blue; */
+    margin: 0 2.5%;
+}
+.services .service_1 section h4,.services .service_2 section h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+}
+.services .service_1 section p,.services .service_2 section p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height:27.2px;
+    color: rgb(77, 77, 77);
+    margin-bottom: 20px;
+}
+.services .service_1 section a,.services .service_2 section a
+{
+    text-decoration: none;
+    color: rgb(239 108 87);
+    font-size: 16px;
+    line-height: 27.2px;
+
+}
+
+.services .service_2 section{
+    display: inline-block;
+    width: 28%;
+    /* background-color: green; */
+    margin: 0 2.5%;
+}
+.services .service_1 section div{
+    display: inline-block;
+    float: right;
+    width: 70%;
+    
+}
+.services .service_1 section img{ 
+    float: left;
+    
+}
+.services .service_2 section div{
+    display: inline-block;
+    float: right;
+    width: 70%;
+    
+}
+.services .service_2 section img{ 
+    float: left;
+    
+}
+/* .slider{
+    width: 80%;
+    margin: 0 auto;
+}
+.slider section{
+   display: inline-block;
+   width: 33%;
+}
+.slider section img{
+    width: 100%;
+} */
+.container{
+    width: 100%;
+    overflow: hidden;
+    /* position: absolute; */
+}
+.container .st{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .st h4{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38.4px;
+    margin-bottom: 10px;
+}
+.container .st p{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(77,77 ,77);
+}
+.slider{
+    width: 200%;
+    height: 470px;
+    margin: 0 auto;
+    position: relative;
+    left: 0px;
+    transition: all 0.6s;
+    
+}
+.slider .image{
+   display: inline-block;
+   width: 15%;
+   height: 450px;
+   margin:0 20px;
+   position: relative;
+   overflow: hidden;
+   
+}
+.slider .image img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.arrow{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.arrow div {
+   display: inline-block;
+   padding: 15px 50px;
+   background-color:rgba(77, 77, 77, 0);
+   color: black;
+   cursor: pointer;
+}
+
+
+.arrow #back {
+   margin-right: 300px;
+
+ }
+
+.slider .image .darkSlider{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.589),transparent);
+    /* z-index: 7; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    /* margin: 0 20px; */
+ }
+ .slider .text{
+    width: 100%;
+    position: absolute;
+    bottom: 17px;
+    text-align: center;
+    transition: all 0.5s;
+    line-height: 35px;
+ }
+ .slider .text span{
+    color: rgb(239, 108, 87);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    /* margin-bottom: 20px; */
+ }
+ .slider .text h4{
+    font-size: 19.2px;
+    font-weight: 500;
+    line-height: 23.04px;
+    color: white;
+    
+ }
+
+ .slider .image:hover{
+    img{
+        scale: 1.1;
+    }
+    .text{
+        bottom: 40px;
+    }
+ }
+ .video{
+    width: 100%;
+    height: 600px;
+    background:url(images/hero_bg_2.jpg) no-repeat center  fixed;
+    background-size:cover;
+    margin-bottom: 70px;
+    position: relative;
+ }
+ .video .darkMode{
+
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+ }
+ .video .circle{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    text-align: center;
+    transition: all 0.6s;
+ }
+ .video .circle i{
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 25px);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  
+ }
+ .video .circle:hover {
+    
+    scale: 1.2;
+   
+  
+ }
+ .video .circle:hover +p{
+    top: 70%;
+ }
+
+ .video p{
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 63%;
+    left: 25%;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: white;
+    transition: all 0.6s;
+ }
+
+ .footer{
+    width: 100%;
+    /* height: 500px; */
+    background-color: rgb(51,51,51);
+    /* color: rgb(153 151 149); */
+   
+ }
+ .footer .container{
+    width:90%;
+    height: 400px;
+    margin: 50px auto;
+    /* background-color: red; */
+    padding-top: 100px;
+    /* background-color: red; */
+ }
+ .footer .st{
+    display: inline-block;
+    /* position: absolute; */
+    /* margin-top: 0; */
+    float: left;
+    width: 30%;
+    margin-right:90px;
+    text-align: start;
+ }
+ .footer .st h5, .footer .nd h5 , .footer .th h4{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: white;
+ }
+ .footer .st p, .footer .nd ul li,.footer .rd ul, .footer .th p{
+    color: rgb(153 151 149);
+    line-height: 27.7px;
+    font-size: 16px;
+    font-weight: 300;
+ }
+ .footer .nd{
+    float: left;
+    margin-top: 0;
+    display: inline-block;
+    width: 20%;
+    /* background-color: red; */
+ }
+ .footer .nd h5{
+    margin-bottom: 20px;
+ }
+ .footer .nd ul li{
+    list-style: none;
+ }
+ .footer .nd ul li a{
+    text-decoration: none;
+    color: rgb(153 151 149);
+ }
+
+ .footer .rd{
+    float: left;
+    display: inline-block;
+    width: 20%;
+    color: rgb(153 151 149);
+    /* background-color: green; */
+ }
+.footer .rd ul {
+    list-style: none;
+    margin-top: 40px;
+}
+ .footer .th{
+    float: left;
+    display: inline-block;
+    width: 20%;
+    /* background-color: blue; */
+ }
+ .footer .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer .th input[type="email"]{
+    background-color: transparent;
+    border: 1px solid rgb(153 151 149);
+    height: 40px;
+}
+.footer .th input[type="submit"]{
+    background-color:rgb(239,108,87); 
+    color: white;
+    border: 1px solid rgb(153 151 149);
+    height: 40px;
+    padding: 10px;
+}
+.footer .th input[type="submit"]:hover{
+    background-color: transparent;
+    border: 2px solid rgb(239,108,87);
+}
+.footer .icons{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer .icons i{
+    margin-right: 50px;
+    color: rgb(153 151 149);
+}
+.footer .icons i:hover,.footer .nd ul li a:hover,.footer .rd li:hover{
+    color: white;
+    cursor: pointer;
+}
+.love_website{
+    height: 50px;
+    text-align: center;
+    color: rgba(153, 151, 149, 0.699);
+}
+ @keyframes video {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+ }
